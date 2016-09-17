@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>A quote a day</title>
+	</head>
+	<body>
+		<div align="center">
+			<h1 style="color: #1a1a1a" id="quote"></h1>
+		</div>
+		<script>
+			var quoteArray = [
+				'You cannot escape the responsability of tomorrow by evading it today',
+				'All that I am, or hope to be, I owe to my angel mother',
+				'Character is like a tree and reputation like a shadow. The shadow is what we think of it; the tree is the real thing'
+			];
+
+			var randomNumber = Math.floor(Math.random() * quoteArray.length);
+			document.getElementById('quote').innerHTML = quoteArray[randomNumber];
+		</script>
+	</body>
+</html>
